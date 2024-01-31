@@ -101,9 +101,9 @@ installCloudFlared() {
 		rm -f cloudflared-linux-$cpuArch.rpm
 	else
 		[ $cpuArch == "aarch64" ] && cpuArch="arm64"
-		wget -N https://ghproxy.com/https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-$cpuArch.deb
-		dpkg -i cloudflared-linux-$cpuArch.deb
-		rm -f cloudflared-linux-$cpuArch.deb
+		wget -N https://gh.hedywang.gay/https://github.com/cloudflare/cloudflared/releases/download/2024.1.5/cloudflared-linux-armhf.deb
+		dpkg -i cloudflared-linux-armhf.deb
+		rm -f cloudflared-linux-armhf.deb
 	fi
 	green "请访问下方提示的网址，登录自己的CloudFlare账号"
 	green "然后授权自己的域名给CloudFlare Argo Tunnel即可"
