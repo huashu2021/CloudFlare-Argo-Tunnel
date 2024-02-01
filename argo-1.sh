@@ -101,7 +101,7 @@ installCloudFlared() {
 		rm -f cloudflared-linux-$cpuArch.rpm
 	else
 		[ $cpuArch == "aarch64" ] && cpuArch="arm64"
-		wget -N https://gh.hedywang.gay/https://github.com/cloudflare/cloudflared/releases/download/2024.1.5/cloudflared-linux-armhf.deb
+		wget -N https://gh.hedywang.gay/https://github.com/cloudflare/cloudflared/releases/download/2024.1.4/cloudflared-linux-armhf.deb
 		dpkg -i cloudflared-linux-armhf.deb
 		rm -f cloudflared-linux-armhf.deb
 	fi
